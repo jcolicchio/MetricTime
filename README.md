@@ -22,12 +22,17 @@ We'll need a unit between **Our** and **Secont** though, so let's further define
 
 Since our **Ours** are a bit shorter than real-world hours, let's define a **Dey** as 30 **Ours**, rather than 24. This is convenient in that the conversion between **Minits** and **Deys** is 10,000 an even multiple of ten.
 
-1 Dey (1 Dy) = 30 Ours (30 O) = 10,000 Minits (10 KMt) = 100,000 Seconts (100 Kst)
+1 Dey (1 Dy) = 30 Ours (30 O)
 ===================
+1 Dy = 10 KMt = 100 Kst
+===================
+
 
 Our definition for **Seconts** was that 3 years would be composed of 100 **Mst**, so let's define a **Yeer** such that 3 **Yeers** is equal to 1000 **Deys**.
 
-3 Yeers (3 Ye) = 1000 Deys (1 KDy) = 30,000 Ours (30 KO) = 1,000,000 Minits (1 MMt) = 100,000,000 Seconts (100 Mst)
+3 Yeers (3 Ye) = 1000 Deys (1 KDy)
+===================
+3 Ye = 30 KO = 1 MMt = 100 Mst
 ===================
 
 Conveniently, if you convert 1 **Yeer** to seconds, you're left with the exact number of seconds in a year. This means that 1 **Yeer** = 1 year.
