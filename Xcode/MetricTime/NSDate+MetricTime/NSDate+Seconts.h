@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef double NSSeconts; // 1 st = 0.94670208 s
+typedef double NSSeconts; // 1 st = 0.94670778 s
 
 @interface NSDate (Seconts)
 

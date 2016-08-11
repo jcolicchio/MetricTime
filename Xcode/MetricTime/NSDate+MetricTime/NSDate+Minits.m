@@ -9,7 +9,7 @@
 #import "NSDate+Seconts.h"
 #import "NSDate+Minits.h"
 
-#define ST_PER_MT (200.0/3.0)
+#define ST_PER_MT 100.0
 #define MT_PER_ST (1.0/ST_PER_MT)
 
 @implementation NSDate (Minits)

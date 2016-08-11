@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef double NSOurs; // 1 O = 4 Kst
+typedef double NSOurs; // 1 O = 3.33 Kst
 
 @interface NSDate (Ours)
 

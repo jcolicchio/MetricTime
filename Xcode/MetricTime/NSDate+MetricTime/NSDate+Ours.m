@@ -9,7 +9,7 @@
 #import "NSDate+Seconts.h"
 #import "NSDate+Ours.h"
 
-#define ST_PER_O 4000.0
+#define ST_PER_O (10000.0/3.0)
 #define O_PER_ST (1.0/ST_PER_O)
 
 @implementation NSDate (Ours)

@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef double NSMinits; // 1 Mt = 66.666 st
+typedef double NSMinits; // 1 Mt = 100 st
 
 @interface NSDate (Minits)
 

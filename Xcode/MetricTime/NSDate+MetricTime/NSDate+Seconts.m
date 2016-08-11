@@ -8,7 +8,8 @@
 
 #import "NSDate+Seconts.h"
 
-#define S_PER_ST 0.94670208
+// this is the exact definition down to the second
+#define S_PER_ST (3.0*31556926.0/100000000.0)
 #define ST_PER_S (1.0/S_PER_ST)
 
 @implementation NSDate (Seconts)

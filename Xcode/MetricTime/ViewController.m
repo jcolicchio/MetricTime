@@ -14,6 +14,8 @@
 #import "NSDate+Deys.h"
 #import "NSDate+Yeers.h"
 
+#define SECS_PER_YEAR (31556926.0)
+
 @interface ViewController ()
 
 @end
@@ -26,41 +28,78 @@
     
     NSDate *date = [NSDate date];
     
-    NSDate *twoHoursLater = [date dateByAddingTimeInterval:60*60*2];
-    NSLog(@"2 hours is %f seconds, or %f minutes",
-          [twoHoursLater timeIntervalSinceDate:date],
-          [twoHoursLater timeIntervalSinceDate:date]/60);
+    NSInteger minutes = 20;
+    NSDate *minutesLater = [date dateByAddingTimeInterval:60*minutes];
+    NSLog(@"%lu minutes is %f seconds, or %f hours, or %f days, or %f years",
+          minutes,
+          [minutesLater timeIntervalSinceDate:date],
+          [minutesLater timeIntervalSinceDate:date]/60/60,
+          [minutesLater timeIntervalSinceDate:date]/60/60/24,
+          [minutesLater timeIntervalSinceDate:date]/SECS_PER_YEAR);
     
-    NSDate *twoOursLater = [date dateByAddingOurs:2];
-    NSLog(@"2 ours is %f seconts, or %f minits",
-          [twoOursLater secontsSinceDate:date],
-          [twoOursLater minitsSinceDate:date]);
+    NSDate *minitsLater = [date dateByAddingMinits:minutes];
+    NSLog(@"%lu minits is %f seconts, or %f minutes, or %f ours, or %f deys, or %f yeers",
+          minutes,
+          [minitsLater secontsSinceDate:date],
+          [minitsLater timeIntervalSinceDate:date]/60,
+          [minitsLater oursSinceDate:date],
+          [minitsLater deysSinceDate:date],
+          [minitsLater yeersSinceDate:date]);
     
-    NSDate *threeDaysLater = [date dateByAddingTimeInterval:60*60*24*3];
-    NSLog(@"3 days is %f seconds, or %f minutes, or %f hours",
-          [threeDaysLater timeIntervalSinceDate:date],
-          [threeDaysLater timeIntervalSinceDate:date]/60,
-          [threeDaysLater timeIntervalSinceDate:date]/60/60);
+    NSInteger hours = 5;
+    NSDate *hoursLater = [date dateByAddingTimeInterval:60*60*hours];
+    NSLog(@"%lu hours is %f seconds, or %f minutes, or %f days, or %f years",
+          hours,
+          [hoursLater timeIntervalSinceDate:date],
+          [hoursLater timeIntervalSinceDate:date]/60,
+          [hoursLater timeIntervalSinceDate:date]/60/60/24,
+          [hoursLater timeIntervalSinceDate:date]/SECS_PER_YEAR);
     
-    NSDate *threeDeysLater = [date dateByAddingDeys:3];
-    NSLog(@"3 deys is %f seconts, or %f minits, or %f ours",
-          [threeDeysLater secontsSinceDate:date],
-          [threeDeysLater minitsSinceDate:date],
-          [threeDeysLater oursSinceDate:date]);
+    NSDate *oursLater = [date dateByAddingOurs:hours];
+    NSLog(@"%lu ours is %f seconts, or %f minits, or %f hours, %f deys, or %f yeers",
+          hours,
+          [oursLater secontsSinceDate:date],
+          [oursLater minitsSinceDate:date],
+          [oursLater timeIntervalSinceDate:date]/60/60,
+          [oursLater deysSinceDate:date],
+          [oursLater yeersSinceDate:date]);
     
-    NSDate *threeYearsLater = [date dateByAddingTimeInterval:60*60*24*365.24*3];
-    NSLog(@"3 years is %f seconds, or %f minutes, or %f hours, or %f days",
-          [threeYearsLater timeIntervalSinceDate:date],
-          [threeYearsLater timeIntervalSinceDate:date]/60,
-          [threeYearsLater timeIntervalSinceDate:date]/60/60,
-          [threeYearsLater timeIntervalSinceDate:date]/60/60/24);
+    NSInteger days = 14;
+    NSDate *daysLater = [date dateByAddingTimeInterval:60*60*24*days];
+    NSLog(@"%lu days is %f seconds, or %f minutes, or %f hours, or %f days, or %f years",
+          days,
+          [daysLater timeIntervalSinceDate:date],
+          [daysLater timeIntervalSinceDate:date]/60,
+          [daysLater timeIntervalSinceDate:date]/60/60,
+          [daysLater timeIntervalSinceDate:date]/60/60/24,
+          [daysLater timeIntervalSinceDate:date]/SECS_PER_YEAR);
     
-    NSDate *threeYeersLater = [date dateByAddingYeers:3];
-    NSLog(@"3 yeers is %f seconts, or %f minits, or %f ours, or %f deys",
-          [threeYeersLater secontsSinceDate:date],
-          [threeYeersLater minitsSinceDate:date],
-          [threeYeersLater oursSinceDate:date],
-          [threeYeersLater deysSinceDate:date]);
+    NSDate *deysLater = [date dateByAddingDeys:days];
+    NSLog(@"%lu deys is %f seconts, or %f minits, or %f ours, or %f days, or %f yeers",
+          days,
+          [deysLater secontsSinceDate:date],
+          [deysLater minitsSinceDate:date],
+          [deysLater oursSinceDate:date],
+          [deysLater timeIntervalSinceDate:date]/60/60/24,
+          [deysLater yeersSinceDate:date]);
+    
+    NSInteger years = 1;
+    NSDate *yearsLater = [date dateByAddingTimeInterval:60*60*24*365.24*years];
+    NSLog(@"%lu years is %f seconds, or %f minutes, or %f hours, or %f days",
+          years,
+          [yearsLater timeIntervalSinceDate:date],
+          [yearsLater timeIntervalSinceDate:date]/60,
+          [yearsLater timeIntervalSinceDate:date]/60/60,
+          [yearsLater timeIntervalSinceDate:date]/60/60/24);
+    
+    NSDate *yeersLater = [date dateByAddingYeers:years];
+    NSLog(@"%lu yeers is %f seconts, or %f minits, or %f ours, or %f deys, or %f years",
+          years,
+          [yeersLater secontsSinceDate:date],
+          [yeersLater minitsSinceDate:date],
+          [yeersLater oursSinceDate:date],
+          [yeersLater deysSinceDate:date],
+          [yeersLater timeIntervalSinceDate:date]/SECS_PER_YEAR);
 }
 
 - (void)didReceiveMemoryWarning {

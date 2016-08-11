@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-typedef double NSDeys; // 1 Dy = 100 Kst
+typedef double NSDeys; // 1 Dy = 30 O, 1 KMt, 100 Kst
 
 @interface NSDate (Deys)
 
