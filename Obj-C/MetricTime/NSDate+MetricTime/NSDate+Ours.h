@@ -22,14 +22,14 @@ typedef double NSOurs; // 1 O = 3.33 Kst
 - (id)addOurs:(NSOurs)ours NS_DEPRECATED(10_0, 10_6, 2_0, 4_0);
 - (instancetype)dateByAddingOurs:(NSOurs)o NS_AVAILABLE(10_6, 2_0);
 
-+ (instancetype)dateWithoursSinceNow:(NSOurs)os;
-+ (instancetype)dateWithoursSinceReferenceDate:(NSOurs)o;
-+ (instancetype)dateWithoursSince1970:(NSOurs)os;
++ (instancetype)dateWithOursSinceNow:(NSOurs)os;
++ (instancetype)dateWithOursSinceReferenceDate:(NSOurs)o;
++ (instancetype)dateWithOursSince1970:(NSOurs)os;
 + (instancetype)dateWithOurs:(NSOurs)osToBeAdded sinceDate:(NSDate *)date;
 
-- (instancetype)initWithoursSinceNow:(NSOurs)os;
-- (instancetype)initWithoursSinceReferenceDate:(NSOurs)o;
-- (instancetype)initWithoursSince1970:(NSOurs)os;
+- (instancetype)initWithOursSinceNow:(NSOurs)os;
+- (instancetype)initWithOursSinceReferenceDate:(NSOurs)o;
+- (instancetype)initWithOursSince1970:(NSOurs)os;
 - (instancetype)initWithOurs:(NSOurs)osToBeAdded sinceDate:(NSDate *)date;
 
 @end

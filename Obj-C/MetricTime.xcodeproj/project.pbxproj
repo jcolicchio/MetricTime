@@ -43,7 +43,6 @@
 		844062451D5C4655003FABFD /* NSDate+Seconts.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Seconts.m"; path = "MetricTime/NSDate+MetricTime/NSDate+Seconts.m"; sourceTree = SOURCE_ROOT; };
 		844062461D5C4655003FABFD /* NSDate+Yeers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+Yeers.h"; path = "MetricTime/NSDate+MetricTime/NSDate+Yeers.h"; sourceTree = SOURCE_ROOT; };
 		844062471D5C4655003FABFD /* NSDate+Yeers.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+Yeers.m"; path = "MetricTime/NSDate+MetricTime/NSDate+Yeers.m"; sourceTree = SOURCE_ROOT; };
-		8440624D1D5C6176003FABFD /* NSDate+MetricTime.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "NSDate+MetricTime.h"; path = "MetricTime/NSDate+MetricTime/NSDate+MetricTime.h"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,7 +111,6 @@
 				844062451D5C4655003FABFD /* NSDate+Seconts.m */,
 				844062461D5C4655003FABFD /* NSDate+Yeers.h */,
 				844062471D5C4655003FABFD /* NSDate+Yeers.m */,
-				8440624D1D5C6176003FABFD /* NSDate+MetricTime.h */,
 			);
 			path = "NSDate+MetricTime";
 			sourceTree = SOURCE_ROOT;

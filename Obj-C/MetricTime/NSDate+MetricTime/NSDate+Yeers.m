@@ -38,28 +38,28 @@
     return [self dateByAddingSeconts:ye*ST_PER_YE];
 }
 
-+ (instancetype)dateWithyeersSinceNow:(NSYeers)yes {
++ (instancetype)dateWithYeersSinceNow:(NSYeers)yes {
     return [self dateWithSecontsSinceNow:yes*ST_PER_YE];
 }
-+ (instancetype)dateWithyeersSinceReferenceDate:(NSYeers)ye {
++ (instancetype)dateWithYeersSinceReferenceDate:(NSYeers)ye {
     return [self dateWithSecontsSinceReferenceDate:ye*ST_PER_YE];
 }
-+ (instancetype)dateWithyeersSince1970:(NSYeers)yes {
++ (instancetype)dateWithYeersSince1970:(NSYeers)yes {
     return [self dateWithSecontsSince1970:yes*ST_PER_YE];
 }
 + (instancetype)dateWithYeers:(NSYeers)yesToBeAdded sinceDate:(NSDate *)date {
     return [self dateWithSeconts:yesToBeAdded*ST_PER_YE sinceDate:date];
 }
 
-- (instancetype)initWithyeersSinceNow:(NSYeers)yes {
+- (instancetype)initWithYeersSinceNow:(NSYeers)yes {
     self = [self initWithSecontsSinceNow:yes*ST_PER_YE];
     return self;
 }
-- (instancetype)initWithyeersSinceReferenceDate:(NSYeers)ye {
+- (instancetype)initWithYeersSinceReferenceDate:(NSYeers)ye {
     self = [self initWithSecontsSinceReferenceDate:ye*ST_PER_YE];
     return self;
 }
-- (instancetype)initWithyeersSince1970:(NSYeers)yes {
+- (instancetype)initWithYeersSince1970:(NSYeers)yes {
     self = [self initWithSecontsSince1970:yes*ST_PER_YE];
     return self;
 }
