@@ -8,11 +8,7 @@
 
 #import "ViewController.h"
 
-#import "NSDate+Seconts.h"
-#import "NSDate+Minits.h"
-#import "NSDate+Ours.h"
-#import "NSDate+Deys.h"
-#import "NSDate+Yeers.h"
+#import "NSDate+MetricTime.h"
 
 #define SECS_PER_YEAR (31556926.0)
 
