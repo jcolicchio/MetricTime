@@ -1,9 +1,8 @@
-MetricTime
+# MetricTime
 I've decided to invent new units for time which divide more evenly into ten. Where there were seconds, now there are "Seconts". Minutes? Try "Minits". As the Ours go by, we'll look back on the Deys before the advent of Metric Time, a modern measure of time for more modern Yeers.
 
 What is Metric Time?
 ===================
--------------------
 
 Our current system for measuring time is archaic. One minute is 60 seconds? What? *Why?* We need a more up-to-date method of measuring the passage of time, one composed of more logical, divisible-by-ten units.
 
@@ -13,22 +12,22 @@ While this may seem confusing and unintuitive at first, it's actually not that f
 
 In real life, three hours make up 10,800 seconds. Let's define 3 **Ours** to be composed of exactly 10,000 **Seconts**.
 
-3 O = 10 Kst
+3 Ours (3 O) = 10,000 Seconts (10 Kst)
 ===================
 
 We'll need a unit between **Our** and **Secont** though, so let's further define an analogous unit to our minutes, known as **Minits**. We'll say 1 **Minit** is equal to 100 **Seconts**.
 
-1 Mt = 100 st
+1 Minit (1 Mt) = 100 Seconts (100 st)
 ===================
 
 Since our **Ours** are a bit shorter than real-world hours, let's define a **Dey** as 30 **Ours**, rather than 24. This is convenient in that the conversion between **Minits** and **Deys** is 10,000 an even multiple of ten.
 
-1 Dy = 30 O = 1 KMt = 100 Kst
+1 Dey (1 Dy) = 30 Ours (30 O) = 10,000 Minits (10 KMt) = 100,000 Seconts (100 Kst)
 ===================
 
 Our definition for **Seconts** was that 3 years would be composed of 100 **Mst**, so let's define a **Yeer** such that 3 **Yeers** is equal to 1000 **Deys**.
 
-3 Ye = 1 KDy = 30 KO = 1 MMt = 100 Mst
+3 Yeers (3 Ye) = 1000 Deys (1 KDy) = 30,000 Ours (30 KO) = 1,000,000 Minits (1 MMt) = 100,000,000 Seconts (100 Mst)
 ===================
 
 Conveniently, if you convert 1 **Yeer** to seconds, you're left with the exact number of seconds in a year. This means that 1 **Yeer** = 1 year.
